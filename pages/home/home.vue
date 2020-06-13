@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="animated animate__bounce" style="height: 60px;width: 60px;background: orange;"></view>
+		我的
 	</view>
 </template>
 

@@ -4,23 +4,49 @@
 			"path": "pages/index/index",
 			"style": {
 				"app-plus": {
-					"titleNView" : {
-						// "searchInput" : {
-						// 	"placeholder": "请输入"
-						// },
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"placeholder":"搜索百科",
+							"placeholderColor":"#CCCCCC",
+							"disabled": true
+						},
 						"buttons": [
 							{
-								"type":"menu",
-								"float": "left"
+								"color":"#FF9619",
+								"colorPressed": "#BBBBBB",
+								"float":"left",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue609"
+							},
+							{
+								"color":"#000000",
+								"colorPressed": "#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue653"
 							}
 						]
 					}
 				}
 			}
 		}
-	    ,{
-            "path" : "pages/ceshi/ceshi",
-            "style" : {}
+        ,{
+            "path":"pages/news/news",
+            "style": {}
+        }
+        ,{
+            "path":"pages/paper/paper",
+            "style": {}
+        }
+        ,{
+            "path":"pages/home/home",
+            "style": {}
         }
     ],
 	"globalStyle": {
@@ -28,5 +54,36 @@
 		"navigationBarTitleText": "百科app",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"color": "#ADADAD",
+		"selectedColor": "#FEE42A",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text":"首页",
+				"iconPath":"/static/images/shouye.png",
+				"selectedIconPath":"/static/images/shouye_ac.png"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"text":"动态",
+				"iconPath":"/static/images/news.png",
+				"selectedIconPath":"/static/images/news_ac.png"
+			},
+			{
+				"pagePath": "pages/paper/paper",
+				"text":"小纸条",
+				"iconPath":"/static/images/xinxi.png",
+				"selectedIconPath":"/static/images/xinxi_ac.png"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text":"我的",
+				"iconPath":"/static/images/My.png",
+				"selectedIconPath":"/static/images/My_ac.png"
+			}
+		]
 	}
 }
